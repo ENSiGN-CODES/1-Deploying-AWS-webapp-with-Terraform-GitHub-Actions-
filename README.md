@@ -25,18 +25,6 @@
 	- Build, push docker image to AWS ECR, then pull and run docker container in the ec2 instance.
 
 
-## How to Try This Project:
-- Clone This repo.
-- Push it to GitHub or Fork the repo in the first place.
-- Add GitHub Secrets from the settings of the repo.
-```yaml
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }} # YOUR AWS User KeyID.
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # YOUR AWS User Credentials.
-  EC2_PRIVATE_SSH_KEY: ${{ secrets.AWS_EC2_SSH_PRIVATE_KEY }} # Used to ssh into EC2.
-  EC2_PUBLIC_SSH_KEY: ${{ secrets.AWS_SSH_PUBLIC_KEY }} # Used to upload public key to aws.
-```
-> To add **AWS Credentials** see the content of `~/.aws/config`
-> If you didn't see anything Install AWS CLI then do this command `aws configure` and provide your info here because you will use it in the future.
 
 > To add **public and private SSH Keys** use these commands
 ```bash
@@ -65,9 +53,6 @@ cat ssh_key_aws.pub # paste the content into GitHub Secrets EC2_PUBLIC_SSH_KEY
 3. [AWS three-tier Architecture by Tech with Lucy.](https://www.youtube.com/watch?v=5RVT3BN9Iws)
 4. [Project Idea.](https://www.youtube.com/watch?v=xIyDhaIfC1I)
 
->**Note**: I've build this project from many resources and couldn't memorize every source I got info from.
-I hope you benefit from this project.
-If you like this project, I appreciate you starring this repo.<br>
-Finally, feel free to fork the content and contact me on my [LinkedIn account](https://www.linkedin.com/in/abdassalam-ahmad/) if you have any questions about this project.<br>
+
 
 
